@@ -1,0 +1,69 @@
+<html>
+	<head>
+		<title>JavaScript BlockChain Mining Demo</title>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+		<style>
+			body {
+				font-family: Arial, sans-serif;
+				font-size: 16px;
+
+				background-color: #EEE;
+				color: #222;
+				margin: 0;
+				padding: 0;
+			}
+			
+			#content {
+				width: 900px;
+				margin: auto;
+				background-color: #E8E8E8;
+				padding: 1em;
+			}
+			
+			h1 {
+				font-size: 1.4em;
+				text-align: center;
+			}
+		
+			textarea {
+				width: 100%;
+				font-size: inherit;
+				border-radius: 3px;
+				padding: 0.3em;
+			}
+			#startmining {
+				width: 100%;
+				font-size: 0.9em;
+				line-height: 2em;
+			}
+		
+			pre {
+				margin: 1em;
+				padding: 1em;
+				font-size: 12px;
+				background-color: #FFF;
+				border: 1px solid #BBB;
+				border-radius: 5px;
+			}
+		</style>
+		<script src="jssha256.js"></script>
+		<script src="jsmining.js"></script>
+	</head>
+	<body>
+		<div id="content" dir="rtl">
+			<h1>JavaScript BlockChain Mining Demo</h1>
+
+			<textarea id="input" rows=5 placeholder=" اكتب هنا النص المراد تعدينه">  </textarea>
+			<input id="startmining" type="button" value=" بدا التعدين " />
+			
+			القيمة المستهدفة :
+			<input id="target" type="text" value="50" />
+			عدد الحروف المستهدف
+			<input id="targetlen" type="text" value="4" />
+		    <textarea id="output" disabled="false" rows=1 style="text-align: center"></textarea>
+          	<textarea id="dataput" disabled="false" rows=5 style="text-align: center"></textarea>
+			
+		</div>		
+	</body>
+	<script>initui();</script>
+</html>
