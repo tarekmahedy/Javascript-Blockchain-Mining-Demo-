@@ -29,7 +29,7 @@ var minnig = function minnig(ascii,targetv,targetlen) {
 	  var timer = window.setInterval(function(){
             
 		  var lo=0;
-		  while (lo<100){
+		  while (lo<99){
 			  i++
 	          lo++;
 	          var nextval=ascii+i;
@@ -46,7 +46,7 @@ var minnig = function minnig(ascii,targetv,targetlen) {
 		   lo=0;
 	       document.getElementById('output').value=mininghash+" : Nonce ="+i;
 		  
-           }, 200);
+           }, 100);
 	
 	return mininghash;
 };
